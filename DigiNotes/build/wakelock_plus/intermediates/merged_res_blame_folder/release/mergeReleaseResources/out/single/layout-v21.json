@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "dev.fluttercommunity.plus.wakelock.wakelock_plus-release-26:/layout-v21/notification_template_custom_big.xml",
+        "source": "dev.fluttercommunity.plus.wakelock.wakelock_plus-core-1.13.1-0:/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "dev.fluttercommunity.plus.wakelock.wakelock_plus-release-26:/layout-v21/notification_action_tombstone.xml",
+        "source": "dev.fluttercommunity.plus.wakelock.wakelock_plus-core-1.13.1-0:/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "dev.fluttercommunity.plus.wakelock.wakelock_plus-release-26:/layout-v21/notification_template_icon_group.xml",
+        "source": "dev.fluttercommunity.plus.wakelock.wakelock_plus-core-1.13.1-0:/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "dev.fluttercommunity.plus.wakelock.wakelock_plus-release-26:/layout-v21/notification_action.xml",
+        "source": "dev.fluttercommunity.plus.wakelock.wakelock_plus-core-1.13.1-0:/layout-v21/notification_action.xml"
+    }
+]

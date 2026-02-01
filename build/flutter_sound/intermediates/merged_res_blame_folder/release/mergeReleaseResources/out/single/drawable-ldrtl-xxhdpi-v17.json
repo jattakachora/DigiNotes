@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "xyz.canardoux.fluttersound.flutter_sound-release-29:/drawable-ldrtl-xxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png",
+        "source": "xyz.canardoux.fluttersound.flutter_sound-appcompat-1.2.0-0:/drawable-ldrtl-xxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "xyz.canardoux.fluttersound.flutter_sound-release-29:/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "xyz.canardoux.fluttersound.flutter_sound-appcompat-1.2.0-0:/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "xyz.canardoux.fluttersound.flutter_sound-release-29:/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "xyz.canardoux.fluttersound.flutter_sound-appcompat-1.2.0-0:/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
+    }
+]

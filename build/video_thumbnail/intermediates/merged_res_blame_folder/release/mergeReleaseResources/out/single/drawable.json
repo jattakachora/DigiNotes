@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "xyz.justsoft.video_thumbnail-release-25:/drawable/notification_bg_low.xml",
+        "source": "xyz.justsoft.video_thumbnail-core-1.13.1-0:/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "xyz.justsoft.video_thumbnail-release-25:/drawable/notification_bg.xml",
+        "source": "xyz.justsoft.video_thumbnail-core-1.13.1-0:/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "xyz.justsoft.video_thumbnail-release-25:/drawable/notification_icon_background.xml",
+        "source": "xyz.justsoft.video_thumbnail-core-1.13.1-0:/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "xyz.justsoft.video_thumbnail-release-25:/drawable/notification_tile_bg.xml",
+        "source": "xyz.justsoft.video_thumbnail-core-1.13.1-0:/drawable/notification_tile_bg.xml"
+    }
+]

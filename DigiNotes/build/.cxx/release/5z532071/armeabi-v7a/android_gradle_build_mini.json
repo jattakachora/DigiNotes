@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "D:\\Flutter\\Flutter SDK\\flutter\\packages\\flutter_tools\\gradle\\src\\main\\scripts\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\Users\\Internet\\AppData\\Local\\Android\\sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+      "-C",
+      "D:\\FlutLab\\DigiNotes Change Icons - Copy\\DigiNotes\\build\\.cxx\\release\\5z532071\\armeabi-v7a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\Users\\Internet\\AppData\\Local\\Android\\sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-C",
+    "D:\\FlutLab\\DigiNotes Change Icons - Copy\\DigiNotes\\build\\.cxx\\release\\5z532071\\armeabi-v7a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {}
+}

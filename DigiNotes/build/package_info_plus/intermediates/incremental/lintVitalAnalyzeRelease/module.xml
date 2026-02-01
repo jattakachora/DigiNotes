@@ -1,0 +1,26 @@
+<lint-module
+    format="1"
+    dir="C:\Users\Internet\AppData\Local\Pub\Cache\hosted\pub.dev\package_info_plus-8.3.1\android"
+    name=":package_info_plus"
+    type="LIBRARY"
+    maven="dev.fluttercommunity.plus.packageinfo:package_info_plus:"
+    agpVersion="8.3.2"
+    buildFolder="D:\FlutLab\DigiNotes Change Icons - Copy\DigiNotes\build\package_info_plus"
+    bootClassPath="C:\Users\Internet\AppData\Local\Android\sdk\platforms\android-34\android.jar;C:\Users\Internet\AppData\Local\Android\sdk\build-tools\34.0.0\core-lambda-stubs.jar"
+    javaSourceLevel="17"
+    compileTarget="android-34"
+    neverShrinking="true">
+  <lintOptions
+      disable="InvalidPackage"
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true">
+    <severities>
+      <severity
+        id="InvalidPackage"
+        severity="IGNORE" />
+    </severities>
+  </lintOptions>
+  <variant name="release"/>
+</lint-module>

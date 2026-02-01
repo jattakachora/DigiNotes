@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "xyz.justsoft.video_thumbnail-release-25:/animator/fragment_close_enter.xml",
+        "source": "xyz.justsoft.video_thumbnail-fragment-1.7.1-9:/animator/fragment_close_enter.xml"
+    },
+    {
+        "merged": "xyz.justsoft.video_thumbnail-release-25:/animator/fragment_open_exit.xml",
+        "source": "xyz.justsoft.video_thumbnail-fragment-1.7.1-9:/animator/fragment_open_exit.xml"
+    },
+    {
+        "merged": "xyz.justsoft.video_thumbnail-release-25:/animator/fragment_close_exit.xml",
+        "source": "xyz.justsoft.video_thumbnail-fragment-1.7.1-9:/animator/fragment_close_exit.xml"
+    },
+    {
+        "merged": "xyz.justsoft.video_thumbnail-release-25:/animator/fragment_fade_enter.xml",
+        "source": "xyz.justsoft.video_thumbnail-fragment-1.7.1-9:/animator/fragment_fade_enter.xml"
+    },
+    {
+        "merged": "xyz.justsoft.video_thumbnail-release-25:/animator/fragment_open_enter.xml",
+        "source": "xyz.justsoft.video_thumbnail-fragment-1.7.1-9:/animator/fragment_open_enter.xml"
+    },
+    {
+        "merged": "xyz.justsoft.video_thumbnail-release-25:/animator/fragment_fade_exit.xml",
+        "source": "xyz.justsoft.video_thumbnail-fragment-1.7.1-9:/animator/fragment_fade_exit.xml"
+    }
+]

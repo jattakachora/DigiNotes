@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "xyz.canardoux.fluttersound.flutter_sound-release-29:/drawable-anydpi-v21/ic_call_answer_video_low.xml",
+        "source": "xyz.canardoux.fluttersound.flutter_sound-core-1.13.1-1:/drawable-anydpi-v21/ic_call_answer_video_low.xml"
+    },
+    {
+        "merged": "xyz.canardoux.fluttersound.flutter_sound-release-29:/drawable-anydpi-v21/ic_call_decline_low.xml",
+        "source": "xyz.canardoux.fluttersound.flutter_sound-core-1.13.1-1:/drawable-anydpi-v21/ic_call_decline_low.xml"
+    },
+    {
+        "merged": "xyz.canardoux.fluttersound.flutter_sound-release-29:/drawable-anydpi-v21/ic_call_decline.xml",
+        "source": "xyz.canardoux.fluttersound.flutter_sound-core-1.13.1-1:/drawable-anydpi-v21/ic_call_decline.xml"
+    },
+    {
+        "merged": "xyz.canardoux.fluttersound.flutter_sound-release-29:/drawable-anydpi-v21/ic_call_answer.xml",
+        "source": "xyz.canardoux.fluttersound.flutter_sound-core-1.13.1-1:/drawable-anydpi-v21/ic_call_answer.xml"
+    },
+    {
+        "merged": "xyz.canardoux.fluttersound.flutter_sound-release-29:/drawable-anydpi-v21/ic_call_answer_video.xml",
+        "source": "xyz.canardoux.fluttersound.flutter_sound-core-1.13.1-1:/drawable-anydpi-v21/ic_call_answer_video.xml"
+    },
+    {
+        "merged": "xyz.canardoux.fluttersound.flutter_sound-release-29:/drawable-anydpi-v21/ic_call_answer_low.xml",
+        "source": "xyz.canardoux.fluttersound.flutter_sound-core-1.13.1-1:/drawable-anydpi-v21/ic_call_answer_low.xml"
+    }
+]

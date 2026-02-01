@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "xyz.canardoux.fluttersound.flutter_sound-release-29:/color/abc_primary_text_material_light.xml",
+        "source": "xyz.canardoux.fluttersound.flutter_sound-appcompat-1.2.0-0:/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "xyz.canardoux.fluttersound.flutter_sound-release-29:/color/abc_search_url_text.xml",
+        "source": "xyz.canardoux.fluttersound.flutter_sound-appcompat-1.2.0-0:/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "xyz.canardoux.fluttersound.flutter_sound-release-29:/color/switch_thumb_material_light.xml",
+        "source": "xyz.canardoux.fluttersound.flutter_sound-appcompat-1.2.0-0:/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "xyz.canardoux.fluttersound.flutter_sound-release-29:/color/switch_thumb_material_dark.xml",
+        "source": "xyz.canardoux.fluttersound.flutter_sound-appcompat-1.2.0-0:/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "xyz.canardoux.fluttersound.flutter_sound-release-29:/color/abc_background_cache_hint_selector_material_light.xml",
+        "source": "xyz.canardoux.fluttersound.flutter_sound-appcompat-1.2.0-0:/color/abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "xyz.canardoux.fluttersound.flutter_sound-release-29:/color/abc_secondary_text_material_light.xml",
+        "source": "xyz.canardoux.fluttersound.flutter_sound-appcompat-1.2.0-0:/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "xyz.canardoux.fluttersound.flutter_sound-release-29:/color/abc_hint_foreground_material_light.xml",
+        "source": "xyz.canardoux.fluttersound.flutter_sound-appcompat-1.2.0-0:/color/abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "xyz.canardoux.fluttersound.flutter_sound-release-29:/color/abc_secondary_text_material_dark.xml",
+        "source": "xyz.canardoux.fluttersound.flutter_sound-appcompat-1.2.0-0:/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "xyz.canardoux.fluttersound.flutter_sound-release-29:/color/abc_hint_foreground_material_dark.xml",
+        "source": "xyz.canardoux.fluttersound.flutter_sound-appcompat-1.2.0-0:/color/abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "xyz.canardoux.fluttersound.flutter_sound-release-29:/color/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "xyz.canardoux.fluttersound.flutter_sound-appcompat-1.2.0-0:/color/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "xyz.canardoux.fluttersound.flutter_sound-release-29:/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "xyz.canardoux.fluttersound.flutter_sound-appcompat-1.2.0-0:/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "xyz.canardoux.fluttersound.flutter_sound-release-29:/color/abc_primary_text_material_dark.xml",
+        "source": "xyz.canardoux.fluttersound.flutter_sound-appcompat-1.2.0-0:/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "xyz.canardoux.fluttersound.flutter_sound-release-29:/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "xyz.canardoux.fluttersound.flutter_sound-appcompat-1.2.0-0:/color/abc_primary_text_disable_only_material_dark.xml"
+    }
+]
