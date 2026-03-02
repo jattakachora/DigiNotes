@@ -18,6 +18,37 @@ DigiNotes is a Flutter mobile app for organizing photos and videos into folders,
 - Google Drive backup and restore with automatic old-backup cleanup.
 - Scheduled backups (daily, weekly, monthly) using background tasks.
 
+## Installation
+
+### Download APK
+
+You can download the latest APK release from the [releases folder](releases/):
+
+- **DigiNotes v1.0.12** - [Download](releases/DigiNotes-v1.0.12-release.apk) (51.6 MB)
+
+#### Installation Steps:
+
+1. Download the APK file from the link above
+2. Enable installation from unknown sources on your Android device:
+   - Settings > Security > Install unknown apps > (select your browser or file manager)
+3. Open the downloaded APK file and tap "Install"
+4. Once installation is complete, tap "Open" to launch DigiNotes
+
+**Requirements:** Android 7.0 (API level 24) or higher
+
+### Build from Source
+
+If you prefer to build the app yourself:
+
+```bash
+git clone https://github.com/jattakachora/DigiNotes.git
+cd DigiNotes
+flutter pub get
+flutter build apk --release
+```
+
+The built APK will be located at: `build/app/outputs/flutter-apk/app-release.apk`
+
 ## Tech Stack
 
 - Flutter
@@ -75,6 +106,8 @@ flutter run
 ```
 
 ## Build Commands
+
+Pre-built APK releases are available in the [releases folder](releases/). To build your own:
 
 - Android APK:
 
