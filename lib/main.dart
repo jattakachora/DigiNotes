@@ -1,16 +1,22 @@
-import 'dart:async'; // Import for StreamSubscription
+import 'dart:async';
+import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:quick_actions/quick_actions.dart';
 import 'package:share_handler/share_handler.dart';
+import 'package:path_provider/path_provider.dart';
+import 'package:path/path.dart' as p;
 
 import 'providers/media_provider.dart';
 import 'screens/folders_screen.dart';
 import 'models/media_item.dart';
 import 'models/folder.dart';
+import 'services/backup_scheduler.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await BackupScheduler.instance.initialize();
   runApp(const DigiNotesApp());
 }
 
@@ -74,10 +80,8 @@ class _DigiNotesAppState extends State<DigiNotesApp> {
 
     final mediaProvider = Provider.of<MediaProvider>(context, listen: false);
 
-    // Load all folders first
     await mediaProvider.loadFolders();
 
-    // Show folder selection dialog to user
     final MediaFolder? chosenFolder = await showDialog<MediaFolder>(
       context: context,
       builder: (ctx) => AlertDialog(
@@ -89,7 +93,6 @@ class _DigiNotesAppState extends State<DigiNotesApp> {
             itemCount: mediaProvider.folders.length,
             itemBuilder: (context, index) {
               final folder = mediaProvider.folders[index];
-              // Fix: Access emoji via safe null-aware property
               final emojiDisplay = (folder as dynamic).emoji ?? '📁';
               return ListTile(
                 leading: Text(
@@ -105,9 +108,7 @@ class _DigiNotesAppState extends State<DigiNotesApp> {
       ),
     );
 
-    if (chosenFolder == null) {
-      return;
-    }
+    if (chosenFolder == null) return;
 
     await _saveSharedMediaToFolder(sharedMedia, mediaProvider, context, chosenFolder);
   }
@@ -120,34 +121,47 @@ class _DigiNotesAppState extends State<DigiNotesApp> {
   ) async {
     int savedCount = 0;
     final attachments = sharedMedia.attachments;
+
     if (attachments != null) {
+      // Get app's documents directory once for all files
+      final appDir = await getApplicationDocumentsDirectory();
+
       for (final attachment in attachments.whereType<SharedAttachment>()) {
         final path = attachment.path;
-        if (path.isNotEmpty) {
-          try {
-            String type = '';
-            if (attachment.type == SharedAttachmentType.image) {
-              type = 'image';
-            } else if (attachment.type == SharedAttachmentType.video) {
-              type = 'video';
-            }
+        if (path == null || path.isEmpty) continue;
 
-            if (type.isNotEmpty) {
-              final mediaItem = MediaItem(
-                path: path,
-                type: type,
-                folderId: folder.id!,
-                createdAt: DateTime.now(),
-                displayName: null,
-                textNote: null,
-              );
-
-              await mediaProvider.dbHelper.insertMediaItem(mediaItem);
-              savedCount++;
-            }
-          } catch (e) {
-            print('Error saving shared attachment: $e');
+        try {
+          String type = '';
+          if (attachment.type == SharedAttachmentType.image) {
+            type = 'image';
+          } else if (attachment.type == SharedAttachmentType.video) {
+            type = 'video';
           }
+
+          if (type.isNotEmpty) {
+            // Copy file into DigiNotes' own documents directory
+            // so it is always included in backups
+            final fileName = p.basename(path);
+            final destPath = p.join(
+              appDir.path,
+              'shared_${DateTime.now().millisecondsSinceEpoch}_$fileName',
+            );
+            await File(path).copy(destPath);
+
+            final mediaItem = MediaItem(
+              path: destPath, // use copied path, not original
+              type: type,
+              folderId: folder.id!,
+              createdAt: DateTime.now(),
+              displayName: null,
+              textNote: null,
+            );
+
+            await mediaProvider.dbHelper.insertMediaItem(mediaItem);
+            savedCount++;
+          }
+        } catch (e) {
+          print('Error saving shared attachment: $e');
         }
       }
     }

@@ -30,6 +30,17 @@ dependencies:
   quick_actions: ^1.0.7
   share_handler: ^0.0.23
   emoji_picker_flutter: ^1.6.3
+  google_sign_in: ^6.2.1
+  googleapis: ^12.0.0
+  http: ^1.2.0
+  archive: ^3.4.10
+  shared_preferences: ^2.2.3
+# ADD THIS
+  workmanager:
+    git:
+      url: https://github.com/fluttercommunity/flutter_workmanager.git
+      path: workmanager
+      ref: main
 
 dev_dependencies:
   flutter_test:

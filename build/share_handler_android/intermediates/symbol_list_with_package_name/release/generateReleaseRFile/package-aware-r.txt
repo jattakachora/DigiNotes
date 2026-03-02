@@ -1,1 +1,0 @@
-com.shoutsocial.share_handler

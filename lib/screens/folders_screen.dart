@@ -6,6 +6,7 @@ import '../models/folder.dart';
 import '../models/media_item.dart';
 import 'folder_detail_screen.dart';
 import 'media_detail_screen.dart';
+import 'backup_screen.dart';  
 
 class FoldersScreen extends StatefulWidget {
   const FoldersScreen({super.key});
@@ -238,10 +239,21 @@ String _formatDate(DateTime date) {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('DigiNotes'),
-        backgroundColor: Colors.blue,
-        foregroundColor: Colors.white,
+              appBar: AppBar(
+            title: const Text('DigiNotes'),
+            backgroundColor: Colors.blue,
+            foregroundColor: Colors.white,
+            actions: [
+              IconButton(
+                icon: const Icon(Icons.cloud_outlined),
+                tooltip: 'Backup & Restore',
+                onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const BackupScreen()),
+                ),
+              ),
+            ],
+
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(60),
           child: Padding(

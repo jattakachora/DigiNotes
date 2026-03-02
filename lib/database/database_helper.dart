@@ -327,4 +327,18 @@ class DatabaseHelper {
     }
     return validItems;
   }
+  /// Closes the current DB connection. It will reopen automatically on next access.
+Future<void> closeDatabase() async {
+  if (_database != null) {
+    await _database!.close();
+    _database = null;
+  }
+}
+
+/// Forces a reload — used after restore to pick up the replaced DB file.
+Future<void> reloadDatabase() async {
+  await closeDatabase();
+  _database = await _initDatabase();
+}
+
 }

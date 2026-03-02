@@ -1,2 +1,0 @@
-D:/FlutLab/DigiNotes Change Icons - Copy/DigiNotes/build/.cxx/release/5z532071/x86_64/CMakeFiles/edit_cache.dir
-D:/FlutLab/DigiNotes Change Icons - Copy/DigiNotes/build/.cxx/release/5z532071/x86_64/CMakeFiles/rebuild_cache.dir

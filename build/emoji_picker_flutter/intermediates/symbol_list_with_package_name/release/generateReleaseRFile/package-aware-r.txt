@@ -1,1 +1,0 @@
-com.fintasys.emoji_picker_flutter
